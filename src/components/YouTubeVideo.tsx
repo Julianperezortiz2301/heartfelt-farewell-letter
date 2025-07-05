@@ -20,8 +20,9 @@ const YouTubeVideo: React.FC<YouTubeVideoProps> = ({
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-            src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+            src={`<iframe width="560" height="315" src="https://www.youtube.com/embed/f2HDj6yhdC4?si=dBstmA2UvClZH7cJ" ${videoId} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`}
             title="Video de despedida"
+           
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

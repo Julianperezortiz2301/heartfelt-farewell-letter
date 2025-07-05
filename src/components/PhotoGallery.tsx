@@ -5,31 +5,31 @@ const PhotoGallery: React.FC = () => {
   const photos = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=600&fit=crop",
+      src: "https://www.google.com/imgres?q=fotos%20de%20diomedes%20melancolicas%20.png&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D10153969145521640&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10153969145521640%26id%3D162029511639%26set%3Da.427131706639&docid=DSmeqpnf0VraBM&tbnid=YuoMlMW-4S1L7M&vet=12ahUKEwjvn7_v8KWOAxVQrIQIHYE_DxYQM3oECEgQAA..i&w=427&h=427&hcb=2&ved=2ahUKEwjvn7_v8KWOAxVQrIQIHYE_DxYQM3oECEgQAA",
       alt: "Momento especial 1",
       caption: "Esos momentos que quedaron en el corazón"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdtN2APLmSOVQ7A-Eggqpp2i7HCadV6WOyuQ&s",
       alt: "Momento especial 2", 
       caption: "Cuando la luz nos acompañaba"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&h=600&fit=crop",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxigDGSZDuE2Um12o382WNB5xBn4127EGLQ&s",
       alt: "Momento especial 3",
       caption: "Bajo la sombra de los recuerdos"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMFz2gRGQANC1N8EqspxWSRS3yfkTf8zSCg&s",
       alt: "Momento especial 4",
       caption: "Cuando todo se veía posible"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx7_H4czv4Gt0o7B7qxXaeX_T8HFwtVuTEw&s",
       alt: "Momento especial 5",
       caption: "Hacia nuevos horizontes"
     }
