@@ -39,12 +39,18 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom nostalgic colors */
+    /* Custom nostalgic colors with dark melancholic tones */
     --nostalgic-blue: 220 35% 65%;
     --nostalgic-lavender: 260 30% 75%;
     --nostalgic-beige: 45 25% 80%;
     --nostalgic-gray: 220 15% 70%;
     --warm-overlay: 240 20% 97%;
+    
+    /* Dark melancholic background colors */
+    --dark-melancholic: 220 25% 8%;
+    --dark-blue-gray: 215 30% 12%;
+    --dark-purple-gray: 250 20% 15%;
+    --deep-shadow: 220 40% 6%;
   }
 
   .dark {
@@ -82,6 +88,12 @@ All colors MUST be HSL.
     --nostalgic-beige: 45 25% 40%;
     --nostalgic-gray: 220 15% 50%;
     --warm-overlay: 220 25% 12%;
+    
+    /* Dark melancholic background colors for dark mode */
+    --dark-melancholic: 220 25% 6%;
+    --dark-blue-gray: 215 30% 8%;
+    --dark-purple-gray: 250 20% 10%;
+    --deep-shadow: 220 40% 4%;
   }
 }
 
@@ -93,6 +105,13 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, 
+      hsl(var(--dark-melancholic)) 0%, 
+      hsl(var(--dark-blue-gray)) 25%, 
+      hsl(var(--dark-purple-gray)) 50%, 
+      hsl(var(--deep-shadow)) 75%, 
+      hsl(var(--dark-melancholic)) 100%);
+    min-height: 100vh;
   }
 }
 
@@ -123,6 +142,36 @@ All colors MUST be HSL.
   }
   .bg-warm-overlay {
     background-color: hsl(var(--warm-overlay));
+  }
+  
+  /* Dark melancholic utilities */
+  .bg-dark-melancholic {
+    background-color: hsl(var(--dark-melancholic));
+  }
+  .bg-dark-blue-gray {
+    background-color: hsl(var(--dark-blue-gray));
+  }
+  .bg-dark-purple-gray {
+    background-color: hsl(var(--dark-purple-gray));
+  }
+  .bg-deep-shadow {
+    background-color: hsl(var(--deep-shadow));
+  }
+  
+  /* Melancholic gradient backgrounds */
+  .bg-melancholic-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--dark-melancholic)) 0%, 
+      hsl(var(--dark-blue-gray)) 25%, 
+      hsl(var(--dark-purple-gray)) 50%, 
+      hsl(var(--deep-shadow)) 100%);
+  }
+  
+  .bg-melancholic-radial {
+    background: radial-gradient(ellipse at center, 
+      hsl(var(--dark-purple-gray)) 0%, 
+      hsl(var(--dark-blue-gray)) 40%, 
+      hsl(var(--dark-melancholic)) 100%);
   }
 }
 

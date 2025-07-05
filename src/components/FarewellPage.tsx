@@ -12,23 +12,23 @@ interface FarewellPageProps {
 
 const FarewellPage: React.FC<FarewellPageProps> = ({ fromName, toName }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-nostalgic-blue/10 via-nostalgic-lavender/10 to-nostalgic-beige/10">
+    <div className="min-h-screen bg-melancholic-gradient">
       {/* Header */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-nostalgic-blue/20 to-nostalgic-lavender/20">
-        <div className="absolute inset-0 bg-white/40"></div>
+      <div className="relative overflow-hidden bg-gradient-to-r from-dark-melancholic/80 to-dark-purple-gray/80">
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 py-16 text-center">
           <div className="flex justify-center items-center space-x-4 mb-6 fade-in">
-            <Star className="h-8 w-8 text-nostalgic-blue/70" />
-            <Heart className="h-10 w-10 text-nostalgic-lavender" />
-            <Star className="h-8 w-8 text-nostalgic-blue/70" />
+            <Star className="h-8 w-8 text-nostalgic-blue/90" />
+            <Heart className="h-10 w-10 text-nostalgic-lavender/90" />
+            <Star className="h-8 w-8 text-nostalgic-blue/90" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-light text-gray-700 mb-4 fade-in">
+          <h1 className="text-4xl md:text-6xl font-light text-white/90 mb-4 fade-in">
             Una Despedida Especial
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 font-light fade-in">
+          <p className="text-xl md:text-2xl text-white/80 font-light fade-in">
             De {fromName} para {toName}
           </p>
-          <div className="mt-8 w-32 h-0.5 bg-gradient-to-r from-transparent via-nostalgic-blue to-transparent mx-auto fade-in"></div>
+          <div className="mt-8 w-32 h-0.5 bg-gradient-to-r from-transparent via-nostalgic-blue/80 to-transparent mx-auto fade-in"></div>
         </div>
       </div>
 
@@ -48,16 +48,16 @@ const FarewellPage: React.FC<FarewellPageProps> = ({ fromName, toName }) => {
         
         {/* Footer */}
         <div className="text-center mt-16 slide-up">
-          <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <p className="text-gray-600 text-lg font-light mb-4">
+          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/10">
+            <p className="text-white/80 text-lg font-light mb-4">
               "Los finales solo son el comienzo de algo nuevo"
             </p>
             <div className="flex justify-center items-center space-x-2">
-              <Heart className="h-5 w-5 text-nostalgic-blue" />
-              <span className="text-sm text-gray-500">
+              <Heart className="h-5 w-5 text-nostalgic-blue/80" />
+              <span className="text-sm text-white/60">
                 Hecho con amor y cariño
               </span>
-              <Heart className="h-5 w-5 text-nostalgic-blue" />
+              <Heart className="h-5 w-5 text-nostalgic-blue/80" />
             </div>
           </div>
         </div>
