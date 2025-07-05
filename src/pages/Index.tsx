@@ -1,14 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import AuthForm from '@/components/AuthForm';
+import FarewellPage from '@/components/FarewellPage';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  
+  // Configuration - You can modify these names
+  const fromName = "Ana";
+  const toName = "Carlos";
+
+  const handleLogin = (email: string, password: string) => {
+    // Simple authentication - accepts any email and password
+    // In a real application, you would validate against a backend
+    if (email && password) {
+      setIsAuthenticated(true);
+      console.log(`User authenticated: ${email}`);
+    }
+  };
+
+  if (!isAuthenticated) {
+    return <AuthForm onLogin={handleLogin} />;
+  }
+
+  return <FarewellPage fromName={fromName} toName={toName} />;
 };
 
 export default Index;
